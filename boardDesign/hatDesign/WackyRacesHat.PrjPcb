@@ -1,6 +1,6 @@
 [Design]
 Version=1.0
-HierarchyMode=0
+HierarchyMode=3
 ChannelRoomNamingStyle=0
 ReleasesFolder=
 ChannelDesignatorFormatString=$Component_$RoomName
@@ -89,7 +89,11 @@ GenerateClassCluster=0
 DocumentUniqueId=HQVLEGRN
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs for Tutorial\Tutorial.nsx
+DocumentPath=Project Outputs for WackyRacesHat\WackyRacesHat.nsx
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Project Outputs for WackyRacesHat\WackyRacesHat.sdf
 DItemRevisionGUID=
 
 [Configuration1]
@@ -285,7 +289,7 @@ OutputDefault3=0
 Configuration3_Name1=ForceUpdateSettings
 Configuration3_Item1=False
 Configuration3_Name2=OutputConfigurationParameter1
-Configuration3_Item2=Record=AdvSimNetlistView|SimulationName=Mixed Sim|ProfileId=KMICCEJJ|OldCfgLoaded=True
+Configuration3_Item2=Record=AdvSimNetlistView|SimulationName=Mixed Sim|OldCfgLoaded=True|ProfileId=VMADTUMP
 
 [OutputGroup3]
 Name=Documentation Outputs
