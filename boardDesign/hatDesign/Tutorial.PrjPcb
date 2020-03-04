@@ -38,6 +38,23 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
+DocumentPath=..\Templates\2020 Templates\hat_template 2020V3.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=HQNNYSUC
+
+[Document2]
 DocumentPath=Power Sheet.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -54,14 +71,14 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HWLAYWFV
 
-[Document2]
+[Document3]
 DocumentPath=Main Sheet.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=2
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -70,6 +87,10 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HQVLEGRN
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for Tutorial\Tutorial.nsx
+DItemRevisionGUID=
 
 [Configuration1]
 Name=Sources
@@ -244,10 +265,10 @@ OutputDefault23=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=Microsoft Print to PDF
+TargetPrinter=\\print\FollowYou-BlackAndWhite
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
-OutputType1=AdvSimNetlist
-OutputName1=Mixed Sim
+OutputType1=SIMPLISSimulation
+OutputName1=SIMPLIS
 OutputDocumentPath1=
 OutputVariantName1=
 OutputDefault1=0
@@ -256,11 +277,15 @@ OutputName2=SIMetrix
 OutputDocumentPath2=
 OutputVariantName2=
 OutputDefault2=0
-OutputType3=SIMPLISSimulation
-OutputName3=SIMPLIS
+OutputType3=AdvSimNetlist
+OutputName3=Mixed Sim
 OutputDocumentPath3=
 OutputVariantName3=
 OutputDefault3=0
+Configuration3_Name1=ForceUpdateSettings
+Configuration3_Item1=False
+Configuration3_Name2=OutputConfigurationParameter1
+Configuration3_Item2=Record=AdvSimNetlistView|SimulationName=Mixed Sim|ProfileId=KMICCEJJ|OldCfgLoaded=True
 
 [OutputGroup3]
 Name=Documentation Outputs
