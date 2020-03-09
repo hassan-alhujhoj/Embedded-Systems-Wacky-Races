@@ -88,6 +88,40 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HQVLEGRN
 
+[Document4]
+DocumentPath=Test Points Sheet.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=ORXWVFNV
+
+[Document5]
+DocumentPath=Connections.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=JKUXHYEP
+
 [GeneratedDocument1]
 DocumentPath=Project Outputs for WackyRacesHat\WackyRacesHat.nsx
 DItemRevisionGUID=
@@ -269,7 +303,7 @@ OutputDefault23=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=\\print\FollowYou-BlackAndWhite
+TargetPrinter=\\ucprint4.canterbury.ac.nz\ECEWing204
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=SIMPLISSimulation
 OutputName1=SIMPLIS
