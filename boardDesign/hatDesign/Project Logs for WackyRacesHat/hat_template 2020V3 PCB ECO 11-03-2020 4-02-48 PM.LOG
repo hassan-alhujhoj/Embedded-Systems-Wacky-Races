@@ -1,0 +1,49 @@
+Removed Pin From Net: NetName=5V Pin=U1-5
+Removed Pin From Net: NetName=ACC_INT Pin=U4-10
+Removed Pin From Net: NetName=NetC25_2 Pin=U4-62
+Added Pin To Net: NetName=5V Pin=U2-1
+Added Pin To Net: NetName=GND Pin=U2-2
+Added Pin To Net: NetName=ACC_INT Pin=U4-35
+Added Pin To Net: NetName=STATUS_LED1 Pin=U4-47
+Added Pin To Net: NetName=STATUS_LED0 Pin=U4-48
+Added Pin To Net: NetName=NetC25_2 Pin=U4-61
+Change Net Name : Old Net Name=NetC9_1 New Net Name=NetC6_1
+Added Pin To Net: NetName=LED_STRIP_DATA_IN Pin=U4-29
+Added Net: Name=LED_STRIP_DATA_IN
+Added Net: Name=LED_STRIP_DATA_OUT
+Added Pin To Net: NetName=NetC3_2 Pin=U1-5
+Added Net: Name=NetC3_2
+Added Pin To Net: NetName=NetC10_2 Pin=U2-5
+Added Net: Name=NetC10_2
+Added Net: Name=NetC12_2
+Added Net: Name=NetC18_1
+Added Pin To Net: NetName=NetC18_2 Pin=U4-64
+Added Net: Name=NetC18_2
+Added Net: Name=NetC22_2
+Added Pin To Net: NetName=NetC23_1 Pin=U2-10
+Added Net: Name=NetC23_1
+Added Pin To Net: NetName=NetC24_2 Pin=U4-62
+Added Net: Name=NetC24_2
+Added Net: Name=NetH8_1
+Added Net: Name=NetLS1_2
+Added Net: Name=NetQ1_1
+Added Pin To Net: NetName=NetR3_2 Pin=U1-4
+Added Net: Name=NetR3_2
+Added Pin To Net: NetName=NetR11_2 Pin=U2-11
+Added Net: Name=NetR11_2
+Added Net: Name=NetR16_2
+Added Pin To Net: NetName=NetTP2_1 Pin=U4-55
+Added Net: Name=NetTP2_1
+Added Pin To Net: NetName=nRF_POWER_ENABLE Pin=U2-3
+Added Net: Name=nRF_POWER_ENABLE
+Added Pin To Net: NetName=PIEZO_DRIVE Pin=U4-30
+Added Net: Name=PIEZO_DRIVE
+Added Net: Name=PIEZO_TP
+Added Class: Name=Connections
+Added Class: Name=Test Points Sheet
+Added Member To Class: ClassName=Power Sheet Member=Component U2 CAT6219-330TDGT3
+Added Member To Class: ClassName=Main Sheet Member=Component U4 ATSAM4S8BA-ANR
+Added Room: Name=Connections
+Added Room: Name=Main Sheet
+Added Room: Name=Power Sheet
+Added Room: Name=Test Points Sheet
