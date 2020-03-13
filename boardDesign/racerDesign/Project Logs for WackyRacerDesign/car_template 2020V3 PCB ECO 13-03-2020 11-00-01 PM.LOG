@@ -1,0 +1,47 @@
+Change Component Designator: OldDesignator=3V3 NewDesignator=1
+Change Component Designator: OldDesignator=Erase NewDesignator=Erase1
+Change Component Designator: OldDesignator=R3 NewDesignator=R4
+Change Component Designator: OldDesignator=R4 NewDesignator=R3
+Change Component Designator: OldDesignator=TP3 NewDesignator=VBATT_IN
+Change Component Designator: OldDesignator=TP4 NewDesignator=GND1
+Change Component Designator: OldDesignator=TP5 NewDesignator=LED_IN
+Change Component Designator: OldDesignator=TP6 NewDesignator=nRF_MISO
+Change Component Designator: OldDesignator=TP7 NewDesignator=LED_OUT
+Change Component Designator: OldDesignator=TP8 NewDesignator=nRF_MOSI
+Change Component Designator: OldDesignator=TP9 NewDesignator=VBATT_OUT
+Change Component Designator: OldDesignator=TP10 NewDesignator=GND2
+Change Component Designator: OldDesignator=TP11 NewDesignator=VBATT_IND
+Change Component Designator: OldDesignator=TP12 NewDesignator=nRF_SCK
+Change Component Designator: OldDesignator=TP13 NewDesignator=5V
+Change Component Designator: OldDesignator=TP14 NewDesignator=GND3
+Change Component Designator: OldDesignator=TP15 NewDesignator=USB_DET
+Change Component Designator: OldDesignator=TP16 NewDesignator=D_N
+Change Component Designator: OldDesignator=TP17 NewDesignator=MOTOR_1_IN_A
+Change Component Designator: OldDesignator=TP18 NewDesignator=D_P
+Change Component Designator: OldDesignator=TP19 NewDesignator=3V3
+Change Component Designator: OldDesignator=TP20 NewDesignator=GND4
+Change Component Designator: OldDesignator=TP21 NewDesignator=MOTOR_1_IN_B
+Change Component Designator: OldDesignator=TP22 NewDesignator=3V3RF
+Change Component Designator: OldDesignator=TP23 NewDesignator=MOTOR_2_IN_A
+Change Component Designator: OldDesignator=TP24 NewDesignator=MOTOR_2_IN_B
+Change Component Designator: OldDesignator=TP25 NewDesignator=MOTOR_3_IN_A
+Change Component Designator: OldDesignator=TP26 NewDesignator=MOTOR_3_IN_B
+Change Component Designator: OldDesignator=TP27 NewDesignator=GPIO_1
+Change Component Designator: OldDesignator=TP28 NewDesignator=GPIO_2
+Change Net Name : Old Net Name=NetErase_1 New Net Name=NetErase1_1
+Change Net Name : Old Net Name=NetH12_2 New Net Name=NetGPIO_1_1
+Change Net Name : Old Net Name=NetH13_2 New Net Name=NetGPIO_2_1
+Change Net Name : Old Net Name=NetR3_1 New Net Name=NetR4_1
+Change Net Name : Old Net Name=NetR4_2 New Net Name=NetR3_2
+Change Net Name : Old Net Name=NetTP5_1 New Net Name=NetLED_IN_1
+Change Net Name : Old Net Name=NetTP17_1 New Net Name=NetMOTOR_1_IN_A_1
+Change Net Name : Old Net Name=NetTP21_1 New Net Name=NetMOTOR_1_IN_B_1
+Change Net Name : Old Net Name=NetTP23_1 New Net Name=NetMOTOR_2_IN_A_1
+Change Net Name : Old Net Name=NetTP24_1 New Net Name=NetMOTOR_2_IN_B_1
+Change Net Name : Old Net Name=NetTP25_1 New Net Name=NetMOTOR_3_IN_A_1
+Change Net Name : Old Net Name=NetTP26_1 New Net Name=NetMOTOR_3_IN_B_1
+Added Room: Name=Headers
+Added Room: Name=MCU
+Added Room: Name=Power
+Added Room: Name=TestPoints
+Added Rule: Name=Schematic Clearance Constraint

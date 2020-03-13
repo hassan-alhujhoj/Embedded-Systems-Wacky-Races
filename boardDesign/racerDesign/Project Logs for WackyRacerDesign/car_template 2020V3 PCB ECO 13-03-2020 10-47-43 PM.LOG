@@ -1,0 +1,8 @@
+Change Component Designator: OldDesignator=TP1 NewDesignator=3V3
+Change Component Designator: OldDesignator=TP2 NewDesignator=Erase
+Change Net Name : Old Net Name=NetTP2_1 New Net Name=NetErase_1
+Added Room: Name=Headers
+Added Room: Name=MCU
+Added Room: Name=Power
+Added Room: Name=TestPoints
+Added Rule: Name=Schematic Clearance Constraint

@@ -1,0 +1,13 @@
+Change Component Designator: OldDesignator=H3 NewDesignator=CH1
+Change Component Designator: OldDesignator=H6 NewDesignator=CH2
+Change Component Designator: OldDesignator=H8 NewDesignator=CH3
+Change Component Designator: OldDesignator=H9 NewDesignator=CH4
+Change Net Name : Old Net Name=NetH3_1 New Net Name=NetCH1_1
+Change Net Name : Old Net Name=NetH6_1 New Net Name=NetCH2_1
+Change Net Name : Old Net Name=NetH8_1 New Net Name=NetCH3_1
+Change Net Name : Old Net Name=NetH9_1 New Net Name=NetCH4_1
+Added Room: Name=Headers
+Added Room: Name=MCU
+Added Room: Name=Power
+Added Room: Name=TestPoints
+Added Rule: Name=Schematic Clearance Constraint

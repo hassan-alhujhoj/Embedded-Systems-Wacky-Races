@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=NetR3_1 Pin=U1-9
+Removed Pin From Net: NetName=NetR5_1 Pin=U1-19
+Added Pin To Net: NetName=NetR3_1 Pin=U1-29
+Added Pin To Net: NetName=NetR5_1 Pin=U1-30
+Added Member To Class: ClassName=Power Member=Component R12 1R
+Added Room: Name=Headers
+Added Room: Name=MCU
+Added Room: Name=Power
+Added Room: Name=TestPoints
+Added Rule: Name=Schematic Clearance Constraint

@@ -1,0 +1,12 @@
+Removed Member From Class: ClassName=TestPoints Member=1
+Change Component Designator: OldDesignator=1 NewDesignator=3V3_1
+Change Component Designator: OldDesignator=3V3 NewDesignator=3V3_2
+Change Component Designator: OldDesignator=Erase1 NewDesignator=Erase
+Change Net Name : Old Net Name=NetErase1_1 New Net Name=NetErase_1
+Added Member To Class: ClassName=TestPoints Member=Component 3V3_2 TP
+Added Member To Class: ClassName=MCU Member=Component R4 100R
+Added Room: Name=Headers
+Added Room: Name=MCU
+Added Room: Name=Power
+Added Room: Name=TestPoints
+Added Rule: Name=Schematic Clearance Constraint

@@ -1,0 +1,8 @@
+Change Component DesignItemId : Designator=R14 Old DesignItemId=RT_0R New DesignItemId=RS_0R0
+Change Component Footprint: Designator=R14 Old Footprint=RESC3216L New Footprint=RESC1608L
+Change Component Description : Designator=R14 Old Description=RES 0R OHM 1/8W 5% 1206 SMD New Description=RES 0.0 OHM 1/10W 5% 0603 SMD
+Added Room: Name=Headers
+Added Room: Name=MCU
+Added Room: Name=Power
+Added Room: Name=TestPoints
+Added Rule: Name=Schematic Clearance Constraint

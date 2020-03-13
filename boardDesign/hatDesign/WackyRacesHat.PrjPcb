@@ -122,23 +122,6 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JKUXHYEP
 
-[Document6]
-DocumentPath=..\..\..\..\AltiumDesigner\Libraries\ECE Components\ECE AD19Components_19V1.IntLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
 [GeneratedDocument1]
 DocumentPath=Project Outputs for WackyRacesHat\WackyRacesHat.nsx
 DItemRevisionGUID=
@@ -320,7 +303,7 @@ OutputDefault23=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=\\ucprint4.canterbury.ac.nz\ECEWing204
+TargetPrinter=\\print\FollowYou-BlackAndWhite
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=SIMPLISSimulation
 OutputName1=SIMPLIS
