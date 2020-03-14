@@ -1,0 +1,95 @@
+Removed Pin From Net: NetName=NetU6_2 Pin=H-Bridge_2-2
+Removed Pin From Net: NetName=NetU6_4 Pin=H-Bridge_2-4
+Removed Pin From Net: NetName=NetU6_4 Pin=H-Bridge_2-5
+Removed Pin From Net: NetName=NetU6_2 Pin=H-Bridge_2-7
+Change Component Designator: OldDesignator=3V3_1 NewDesignator=1
+Change Component Designator: OldDesignator=3V3_2 NewDesignator=3
+Change Component Designator: OldDesignator=3V3RF NewDesignator=4
+Change Component Designator: OldDesignator=5V NewDesignator=2
+Change Component Designator: OldDesignator=D_N NewDesignator=D_N1
+Change Component Designator: OldDesignator=D_P NewDesignator=D_P1
+Change Component Designator: OldDesignator=Erase NewDesignator=Erase1
+Change Component Designator: OldDesignator=H4 NewDesignator=LED_TAPE1
+Change Component Designator: OldDesignator=H5 NewDesignator=Bumper1
+Change Component Designator: OldDesignator=H7 NewDesignator=H3
+Change Component Designator: OldDesignator=H10 NewDesignator=US1
+Change Component Designator: OldDesignator=H11 NewDesignator=M_1
+Change Component Designator: OldDesignator=H12 NewDesignator=H4
+Change Component Designator: OldDesignator=H13 NewDesignator=H5
+Change Component Designator: OldDesignator=H14 NewDesignator=M_2
+Change Component Designator: OldDesignator=LED_IN NewDesignator=LED_IN1
+Change Component Designator: OldDesignator=LED_OUT NewDesignator=LED_OUT1
+Change Component Designator: OldDesignator=MOTOR_1_IN_A NewDesignator=MOTOR_1
+Change Component Designator: OldDesignator=MOTOR_1_IN_B NewDesignator=MOTOR_2
+Change Component Designator: OldDesignator=MOTOR_2_IN_A NewDesignator=MOTOR_3
+Change Component Designator: OldDesignator=MOTOR_2_IN_B NewDesignator=MOTOR_4
+Change Component Designator: OldDesignator=MOTOR_3_IN_A NewDesignator=MOTOR_5
+Change Component Designator: OldDesignator=MOTOR_3_IN_B NewDesignator=MOTOR_6
+Change Component Designator: OldDesignator=nRF_MISO NewDesignator=nRF_MISO1
+Change Component Designator: OldDesignator=nRF_MOSI NewDesignator=nRF_MOSI1
+Change Component Designator: OldDesignator=nRF_SCK NewDesignator=nRF_SCK1
+Change Component Designator: OldDesignator=U5 NewDesignator=U4
+Change Component Designator: OldDesignator=U7 NewDesignator=U5
+Change Component Designator: OldDesignator=U8 NewDesignator=U6
+Change Component Designator: OldDesignator=USB_DET NewDesignator=USB_DET1
+Change Component Designator: OldDesignator=VBATT_IN NewDesignator=VBATT_IN1
+Change Component Designator: OldDesignator=VBATT_IND NewDesignator=VBATT_IND1
+Change Component Designator: OldDesignator=VBATT_OUT NewDesignator=VBATT_OUT1
+Added Component: Designator=M_3(MOLEX_KK_2_HDR)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer PN"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Storage Location"; Value = "ECE Dept Store"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1462926"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "2 Pin Molex KK HDR"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetU6_4 Pin=H-Bridge_2-2
+Added Pin To Net: NetName=NetU6_2 Pin=H-Bridge_2-4
+Added Pin To Net: NetName=NetU6_2 Pin=H-Bridge_2-5
+Added Pin To Net: NetName=NetU6_4 Pin=H-Bridge_2-7
+Added Pin To Net: NetName=NetU6_4 Pin=M_3-1
+Added Pin To Net: NetName=NetU6_2 Pin=M_3-2
+Change Net Name : Old Net Name=NetErase_1 New Net Name=NetErase1_1
+Change Net Name : Old Net Name=NetH4_2 New Net Name=NetLED_OUT1_1
+Change Net Name : Old Net Name=NetH5_2 New Net Name=NetBumper1_2
+Change Net Name : Old Net Name=NetH10_2 New Net Name=NetU1_11
+Change Net Name : Old Net Name=NetH10_3 New Net Name=NetR17_2
+Change Net Name : Old Net Name=NetH11_1 New Net Name=NetH-Bridge_1_2
+Change Net Name : Old Net Name=NetH11_2 New Net Name=NetH-Bridge_1_4
+Change Net Name : Old Net Name=NetH14_1 New Net Name=NetH-Bridge_1_7
+Change Net Name : Old Net Name=NetH14_2 New Net Name=NetH-Bridge_1_5
+Change Net Name : Old Net Name=NetLED_IN_1 New Net Name=NetLED_IN1_1
+Change Net Name : Old Net Name=NetMOTOR_1_IN_A_1 New Net Name=NetH-Bridge_1_16
+Change Net Name : Old Net Name=NetMOTOR_1_IN_B_1 New Net Name=NetH-Bridge_1_15
+Change Net Name : Old Net Name=NetMOTOR_2_IN_A_1 New Net Name=NetH-Bridge_1_9
+Change Net Name : Old Net Name=NetMOTOR_2_IN_B_1 New Net Name=NetH-Bridge_1_10
+Change Net Name : Old Net Name=NetMOTOR_3_IN_A_1 New Net Name=NetH-Bridge_2_9
+Change Net Name : Old Net Name=NetMOTOR_3_IN_B_1 New Net Name=NetH-Bridge_2_10
+Change Net Name : Old Net Name=NetR10_1 New Net Name=NetH-Bridge_1_3
+Change Net Name : Old Net Name=NetR11_2 New Net Name=NetH-Bridge_1_6
+Change Net Name : Old Net Name=NetR13_1 New Net Name=NetH-Bridge_2_3
+Change Net Name : Old Net Name=NetR14_1 New Net Name=NetH-Bridge_2_6
+Change Net Name : Old Net Name=NetU1_5 New Net Name=NetH-Bridge_2_8
+Change Net Name : Old Net Name=NetU1_16 New Net Name=NetH-Bridge_2_1
+Change Net Name : Old Net Name=NetU1_20 New Net Name=NetH-Bridge_1_8
+Change Net Name : Old Net Name=NetU1_34 New Net Name=NetH-Bridge_1_1
+Change Net Name : Old Net Name=NetU6_2 New Net Name=NetH-Bridge_2_4
+Change Net Name : Old Net Name=NetU6_4 New Net Name=NetH-Bridge_2_2
+Added Member To Class: ClassName=Headers Member=Component Bumper1 2 Pin Molex KK HDR
+Added Member To Class: ClassName=Power Member=Component C28 1uF
+Added Member To Class: ClassName=Power Member=Component H-Bridge_1 DRV8833
+Added Member To Class: ClassName=Power Member=Component H-Bridge_2 DRV8833
+Added Member To Class: ClassName=Headers Member=Component LED_TAPE1 3 Pin Molex KK Hdr
+Added Member To Class: ClassName=Headers Member=Component M_1 2 Pin Molex KK HDR
+Added Member To Class: ClassName=Headers Member=Component M_2 2 Pin Molex KK HDR
+Added Member To Class: ClassName=Headers Member=Component M_3 2 Pin Molex KK HDR
+Added Member To Class: ClassName=Power Member=Component R12 1R
+Added Member To Class: ClassName=Headers Member=Component US1 Ultrasonic Sensor Connector
+Added Room: Name=Headers
+Added Room: Name=MCU
+Added Room: Name=Power
+Added Room: Name=TestPoints
+Added Rule: Name=Schematic Clearance Constraint
