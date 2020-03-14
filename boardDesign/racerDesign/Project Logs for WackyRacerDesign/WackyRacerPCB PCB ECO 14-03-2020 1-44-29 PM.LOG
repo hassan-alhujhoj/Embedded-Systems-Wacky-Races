@@ -1,0 +1,40 @@
+Change Component Designator: OldDesignator=1 NewDesignator=3V3_1
+Change Component Designator: OldDesignator=2 NewDesignator=5V
+Change Component Designator: OldDesignator=3 NewDesignator=3V3_2
+Change Component Designator: OldDesignator=4 NewDesignator=3V3RF
+Change Component Designator: OldDesignator=Bumper1 NewDesignator=Bumper
+Change Component Designator: OldDesignator=D_N1 NewDesignator=D_N
+Change Component Designator: OldDesignator=D_P1 NewDesignator=D_P
+Change Component Designator: OldDesignator=Erase1 NewDesignator=Erase
+Change Component Designator: OldDesignator=H2 NewDesignator=USB
+Change Component Designator: OldDesignator=LED_TAPE1 NewDesignator=LED_TAPE
+Change Component Designator: OldDesignator=MOTOR_1 NewDesignator=MOTOR_1_A
+Change Component Designator: OldDesignator=MOTOR_2 NewDesignator=MOTOR_1_B
+Change Component Designator: OldDesignator=MOTOR_3 NewDesignator=MOTOR_2_A
+Change Component Designator: OldDesignator=MOTOR_4 NewDesignator=MOTOR_2_B
+Change Component Designator: OldDesignator=MOTOR_5 NewDesignator=MOTOR_3_A
+Change Component Designator: OldDesignator=MOTOR_6 NewDesignator=MOTOR_3_B
+Change Component Designator: OldDesignator=nRF_MISO1 NewDesignator=nRF_MISO
+Change Component Designator: OldDesignator=nRF_MOSI1 NewDesignator=nRF_MOSI
+Change Component Designator: OldDesignator=nRF_SCK1 NewDesignator=nRF_SCK
+Change Component Designator: OldDesignator=U2 NewDesignator=nRF24
+Change Component Designator: OldDesignator=U3 NewDesignator=BUCK
+Change Component Designator: OldDesignator=U4 NewDesignator=3V3_REG
+Change Component Designator: OldDesignator=U5 NewDesignator=3V3RF_REG
+Change Component Designator: OldDesignator=U6 NewDesignator=LVL_CON
+Change Component Designator: OldDesignator=US1 NewDesignator=US
+Change Component Designator: OldDesignator=USB_DET1 NewDesignator=USB_DET
+Change Component Designator: OldDesignator=VBATT_IN1 NewDesignator=VBATT_IN
+Change Component Designator: OldDesignator=VBATT_IND1 NewDesignator=VBATT_IND
+Change Component Designator: OldDesignator=VBATT_OUT1 NewDesignator=VBATT_OUT
+Change Net Name : Old Net Name=NetBumper1_2 New Net Name=NetBumper_2
+Change Net Name : Old Net Name=NetC5_1 New Net Name=NetBUCK_1
+Change Net Name : Old Net Name=NetC5_2 New Net Name=NetBUCK_8
+Change Net Name : Old Net Name=NetErase1_1 New Net Name=NetErase_1
+Change Net Name : Old Net Name=NetR9_1 New Net Name=NetBUCK_4
+Change Net Name : Old Net Name=NetU1_36 New Net Name=Net3V3RF_REG_3
+Added Room: Name=Headers
+Added Room: Name=MCU
+Added Room: Name=Power
+Added Room: Name=TestPoints
+Added Rule: Name=Schematic Clearance Constraint

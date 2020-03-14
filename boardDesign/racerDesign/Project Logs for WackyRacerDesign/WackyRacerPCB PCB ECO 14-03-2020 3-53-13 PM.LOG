@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=nRF_IRQ Pin=U1-52
+Added Pin To Net: NetName=nRF_IRQ Pin=U1-19
+Added Room: Name=MCU
+Added Rule: Name=Schematic Clearance Constraint

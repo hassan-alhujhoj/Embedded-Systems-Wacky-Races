@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=5V Pin=C9-2
+Removed Pin From Net: NetName=5V Pin=C10-2
+Removed Pin From Net: NetName=5V Pin=H-Bridge_1-12
+Added Pin To Net: NetName=VBATT_OUT Pin=C9-2
+Added Pin To Net: NetName=VBATT_OUT Pin=C10-2
+Added Pin To Net: NetName=VBATT_OUT Pin=H-Bridge_1-12
+Added Room: Name=Headers
+Added Room: Name=MCU
+Added Room: Name=Power
+Added Room: Name=TestPoints
+Added Rule: Name=Schematic Clearance Constraint
