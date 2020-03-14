@@ -1,0 +1,3 @@
+Change Component Designator: OldDesignator=M2_B NewDesignator=M1_B
+Added Member To Class: ClassName=TestPoints Member=Component M2_B TP
+Added Rule: Name=Schematic Clearance Constraint

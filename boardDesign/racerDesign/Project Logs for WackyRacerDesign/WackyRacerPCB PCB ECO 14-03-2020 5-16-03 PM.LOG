@@ -1,0 +1,12 @@
+Change Component Designator: OldDesignator=M_1_A NewDesignator=M1_A
+Change Component Designator: OldDesignator=M_1_B NewDesignator=M2_B
+Change Component Designator: OldDesignator=M_2_A NewDesignator=M2_A
+Change Component Designator: OldDesignator=M_2_B NewDesignator=M2_B
+Change Component Designator: OldDesignator=M_3_A NewDesignator=M3_A
+Change Component Designator: OldDesignator=M_3_B NewDesignator=M3_B
+Change Component Designator: OldDesignator=nRF_MISO NewDesignator=MISO
+Change Component Designator: OldDesignator=nRF_MOSI NewDesignator=MOSI
+Change Component Designator: OldDesignator=nRF_SCK NewDesignator=SCK
+Added Pin To Net: NetName=nRF_MISO Pin=MISO-1
+Added Pin To Net: NetName=nRF_MOSI Pin=MOSI-1
+Added Pin To Net: NetName=nRF_SCK Pin=SCK-1

@@ -1,0 +1,23 @@
+Removed Pin From Net: NetName=nRF_MISO Pin=nRF_MISO-1
+Removed Pin From Net: NetName=nRF_MOSI Pin=nRF_MOSI-1
+Removed Pin From Net: NetName=nRF_SCK Pin=nRF_SCK-1
+Change Component Designator: OldDesignator=MOTOR_1_A NewDesignator=M_1_A
+Change Component Designator: OldDesignator=MOTOR_1_B NewDesignator=M_1_B
+Change Component Designator: OldDesignator=MOTOR_2_A NewDesignator=M_2_A
+Change Component Designator: OldDesignator=MOTOR_2_B NewDesignator=M_2_B
+Change Component Designator: OldDesignator=MOTOR_3_A NewDesignator=M_3_A
+Change Component Designator: OldDesignator=MOTOR_3_B NewDesignator=M_3_B
+Change Net Name : Old Net Name=NetC13_1 New Net Name=VCORE
+Added Pin To Net: NetName=MISO Pin=nRF_MISO-1
+Added Net: Name=MISO
+Added Pin To Net: NetName=MOSI Pin=nRF_MOSI-1
+Added Net: Name=MOSI
+Added Pin To Net: NetName=SCK Pin=nRF_SCK-1
+Added Net: Name=SCK
+Added Member To Class: ClassName=Power Member=Component F1 5A
+Added Member To Class: ClassName=Headers Member=Component LED_TAPE 3 Pin Molex KK Hdr
+Added Room: Name=Headers
+Added Room: Name=MCU
+Added Room: Name=Power
+Added Room: Name=TestPoints
+Added Rule: Name=Schematic Clearance Constraint
