@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=NetLED_IN1_1 Pin=U1-3
+Removed Pin From Net: NetName=NetU1_11 Pin=U1-11
+Removed Pin From Net: NetName=NetR17_1 Pin=U1-14
+Removed Pin From Net: NetName=NetR5_1 Pin=U1-30
+Removed Pin From Net: NetName=NetBumper_2 Pin=U1-31
+Added Pin To Net: NetName=NetR5_1 Pin=U1-11
+Added Pin To Net: NetName=NetBumper_2 Pin=U1-14
+Added Pin To Net: NetName=NetR17_1 Pin=U1-30
+Added Pin To Net: NetName=NetU1_11 Pin=U1-31
+Added Pin To Net: NetName=NetLED_IN1_1 Pin=U1-33
+Change Net Name : Old Net Name=NetU1_11 New Net Name=NetU1_31
+Added Room: Name=Headers
+Added Room: Name=MCU
+Added Room: Name=Power
+Added Room: Name=TestPoints
+Added Rule: Name=Schematic Clearance Constraint

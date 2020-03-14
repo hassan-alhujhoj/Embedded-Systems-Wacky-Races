@@ -1,0 +1,10 @@
+Added Pin To Net: NetName=D_P Pin=R2-2
+Added Pin To Net: NetName=D_N Pin=R3-2
+Added Pin To Net: NetName=D_N Pin=U1-56
+Added Pin To Net: NetName=D_P Pin=U1-57
+Added Member To Class: ClassName=TestPoints Member=Component M2_B TP
+Added Room: Name=Headers
+Added Room: Name=MCU
+Added Room: Name=Power
+Added Room: Name=TestPoints
+Added Rule: Name=Schematic Clearance Constraint

@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=NetR15_1 Pin=U1-6
+Added Pin To Net: NetName=NetR15_1 Pin=U1-49
+Added Member To Class: ClassName=Power Member=Component C7 22uF
+Added Rule: Name=Schematic Clearance Constraint

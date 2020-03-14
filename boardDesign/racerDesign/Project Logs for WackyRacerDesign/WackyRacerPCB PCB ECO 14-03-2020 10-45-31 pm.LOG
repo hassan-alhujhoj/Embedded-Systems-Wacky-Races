@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=D_P Pin=R2-2
+Removed Pin From Net: NetName=D_N Pin=R3-2
+Removed Pin From Net: NetName=D_N Pin=U1-56
+Removed Pin From Net: NetName=D_P Pin=U1-57
+Added Pin To Net: NetName=NetR2_2 Pin=R2-2
+Added Pin To Net: NetName=NetR2_2 Pin=U1-57
+Added Net: Name=NetR2_2
+Added Pin To Net: NetName=NetR3_2 Pin=R3-2
+Added Pin To Net: NetName=NetR3_2 Pin=U1-56
+Added Net: Name=NetR3_2
+Added Rule: Name=Schematic Clearance Constraint
