@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=5 V Pin=3V3_REG-1
+Removed Pin From Net: NetName=5 V Pin=3V3_REG-3
+Removed Pin From Net: NetName=5 V Pin=C20-1
+Removed Pin From Net: NetName=GND Pin=Y1-2
+Removed Pin From Net: NetName=GND Pin=Y1-4
+Added Pin To Net: NetName=5V Pin=3V3_REG-1
+Added Pin To Net: NetName=5V Pin=3V3_REG-3
+Added Pin To Net: NetName=5V Pin=C20-1
+Added Member To Class: ClassName=Power Member=Component C9 10nF
+Added Member To Class: ClassName=Power Member=Component C10 10uF
+Added Member To Class: ClassName=Power Member=Component C29 1uF
+Added Member To Class: ClassName=Power Member=Component R20 10K
+Added Rule: Name=Schematic Clearance Constraint
