@@ -1,0 +1,15 @@
+Change Component Designator: Old Designator=3V3_2 New Designator=5
+Change Component Designator: Old Designator=3V3RF New Designator=6
+Change Component Designator: Old Designator=5V New Designator=4
+Change Component Designator: Old Designator=M1_A New Designator=M1
+Change Component Designator: Old Designator=M1_B New Designator=M2
+Change Component Designator: Old Designator=M2_A New Designator=M3
+Change Component Designator: Old Designator=M2_B New Designator=M4
+Change Component Designator: Old Designator=M3_A New Designator=M5
+Change Component Designator: Old Designator=M3_B New Designator=M6
+Change Component Designator: Old Designator=MISO New Designator=MISO1
+Change Component Designator: Old Designator=MOSI New Designator=MOSI1
+Change Component Designator: Old Designator=SCK New Designator=SCK1
+Change Component Designator: Old Designator=USB_DET New Designator=USB_DET1
+Change Component Designator: Old Designator=VBATT_IND New Designator=VBATT_IND1
+Change Component Designator: Old Designator=VBATT_OUT New Designator=VBATT_OUT1
