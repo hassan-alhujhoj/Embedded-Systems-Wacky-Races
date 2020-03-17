@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=NetH-Bridge_1_2 Pin=M_1-1
+Removed Pin From Net: NetName=NetH-Bridge_1_4 Pin=M_1-2
+Removed Pin From Net: NetName=NetH-Bridge_1_7 Pin=M_2-1
+Removed Pin From Net: NetName=NetH-Bridge_1_5 Pin=M_2-2
+Change Component Designator: OldDesignator=M_1 NewDesignator=M_2
+Change Component Designator: OldDesignator=M_2 NewDesignator=M_1
+Added Pin To Net: NetName=NetH-Bridge_1_2 Pin=M_1-1
+Added Pin To Net: NetName=NetH-Bridge_1_4 Pin=M_1-2
+Added Pin To Net: NetName=NetH-Bridge_1_7 Pin=M_2-1
+Added Pin To Net: NetName=NetH-Bridge_1_5 Pin=M_2-2
+Added Rule: Name=Schematic Clearance Constraint

@@ -1,0 +1,88 @@
+Removed Pin From Net: NetName=NetCH1_1 Pin=CH1-1
+Removed Pin From Net: NetName=GND Pin=CH1-2
+Removed Pin From Net: NetName=NetCH2_1 Pin=CH2-1
+Removed Pin From Net: NetName=GND Pin=CH2-2
+Removed Pin From Net: NetName=NetCH3_1 Pin=CH3-1
+Removed Pin From Net: NetName=GND Pin=CH3-2
+Removed Pin From Net: NetName=NetCH4_1 Pin=CH4-1
+Removed Pin From Net: NetName=GND Pin=CH4-2
+Removed Pin From Net: NetName=GND Pin=Y1-2
+Removed Pin From Net: NetName=GND Pin=Y1-4
+Removed Member From Class: ClassName=Headers Member=CH1
+Removed Member From Class: ClassName=Headers Member=CH2
+Removed Member From Class: ClassName=Headers Member=CH3
+Removed Member From Class: ClassName=Headers Member=CH4
+Added Component: Designator=H2(SD-53398-0219)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Contact Type"; Value = "Blade Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex Inc"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "0533980271"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "0.049" (1.25mm)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Storage Location"; Value = "PCB Assembly WS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM7606CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "SMD Vert 1.25mm"; VariantName = "[No Variations]"
+Added Component: Designator=H6(SD-53398-0219)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Contact Type"; Value = "Blade Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex Inc"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "0533980271"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "0.049" (1.25mm)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Storage Location"; Value = "PCB Assembly WS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM7606CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "SMD Vert 1.25mm"; VariantName = "[No Variations]"
+Added Component: Designator=H7(SD-53398-0219)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Contact Type"; Value = "Blade Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex Inc"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "0533980271"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "0.049" (1.25mm)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Storage Location"; Value = "PCB Assembly WS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM7606CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "SMD Vert 1.25mm"; VariantName = "[No Variations]"
+Added Component: Designator=H8(SD-53398-0219)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Contact Type"; Value = "Blade Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex Inc"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "0533980271"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "0.049" (1.25mm)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Storage Location"; Value = "PCB Assembly WS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM7606CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "SMD Vert 1.25mm"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetCH1_1 Pin=H2-1
+Added Pin To Net: NetName=GND Pin=H2-2
+Added Pin To Net: NetName=NetCH2_1 Pin=H6-1
+Added Pin To Net: NetName=GND Pin=H6-2
+Added Pin To Net: NetName=NetCH3_1 Pin=H7-1
+Added Pin To Net: NetName=GND Pin=H7-2
+Added Pin To Net: NetName=NetCH4_1 Pin=H8-1
+Added Pin To Net: NetName=GND Pin=H8-2
+Change Net Name : Old Net Name=NetCH1_1 New Net Name=NetH2_1
+Change Net Name : Old Net Name=NetCH2_1 New Net Name=NetH6_1
+Change Net Name : Old Net Name=NetCH3_1 New Net Name=NetH7_1
+Change Net Name : Old Net Name=NetCH4_1 New Net Name=NetH8_1
+Added Member To Class: ClassName=MCU Member=Component H1 Header 5X2 Vert
+Added Member To Class: ClassName=Headers Member=Component H2 SMD Vert 1.25mm
+Added Member To Class: ClassName=Headers Member=Component H6 SMD Vert 1.25mm
+Added Member To Class: ClassName=Headers Member=Component H7 SMD Vert 1.25mm
+Added Member To Class: ClassName=Headers Member=Component H8 SMD Vert 1.25mm
+Added Room: Name=Headers
+Added Room: Name=MCU
+Added Room: Name=Power
+Added Room: Name=TestPoints
+Added Rule: Name=Schematic Clearance Constraint

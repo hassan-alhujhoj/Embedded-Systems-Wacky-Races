@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=NetH-Bridge_1_10 Pin=U1-32
+Removed Pin From Net: NetName=NetH-Bridge_1_16 Pin=U1-44
+Added Pin To Net: NetName=NetH-Bridge_1_16 Pin=U1-32
+Added Pin To Net: NetName=NetH-Bridge_1_10 Pin=U1-44
+Added Member To Class: ClassName=Headers Member=Component M_2 2 Pin Molex KK HDR
+Added Rule: Name=Schematic Clearance Constraint
