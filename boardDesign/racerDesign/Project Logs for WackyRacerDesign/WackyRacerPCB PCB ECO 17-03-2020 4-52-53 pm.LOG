@@ -1,0 +1,131 @@
+Change Component DesignItemId : Designator=M1_A Old DesignItemId=TP_0603 New DesignItemId=TP_1206
+Change Component DesignItemId : Designator=M1_B Old DesignItemId=TP_0603 New DesignItemId=TP_1206
+Change Component DesignItemId : Designator=M2_A Old DesignItemId=TP_0603 New DesignItemId=TP_1206
+Change Component DesignItemId : Designator=M2_B Old DesignItemId=TP_0603 New DesignItemId=TP_1206
+Change Component DesignItemId : Designator=M3_A Old DesignItemId=TP_0603 New DesignItemId=TP_1206
+Change Component DesignItemId : Designator=M3_B Old DesignItemId=TP_0603 New DesignItemId=TP_1206
+Change Component Footprint: Designator=M1_A Old Footprint=TP_0603 New Footprint=TP_1206
+Change Component Footprint: Designator=M1_B Old Footprint=TP_0603 New Footprint=TP_1206
+Change Component Footprint: Designator=M2_A Old Footprint=TP_0603 New Footprint=TP_1206
+Change Component Footprint: Designator=M2_B Old Footprint=TP_0603 New Footprint=TP_1206
+Change Component Footprint: Designator=M3_A Old Footprint=TP_0603 New Footprint=TP_1206
+Change Component Footprint: Designator=M3_B Old Footprint=TP_0603 New Footprint=TP_1206
+Change Component Comment : Designator=M1_A Old Comment==Value New Comment=TP
+Change Component Comment : Designator=M1_B Old Comment==Value New Comment=TP
+Change Component Comment : Designator=M2_A Old Comment==Value New Comment=TP
+Change Component Comment : Designator=M2_B Old Comment==Value New Comment=TP
+Change Component Comment : Designator=M3_A Old Comment==Value New Comment=TP
+Change Component Comment : Designator=M3_B Old Comment==Value New Comment=TP
+Change Component Description : Designator=M1_A Old Description=Test Point 1.65X0.9X1.2mm SMD New Description=Test-Point 3.3x1.6x2.1mm SMD
+Change Component Description : Designator=M1_B Old Description=Test Point 1.65X0.9X1.2mm SMD New Description=Test-Point 3.3x1.6x2.1mm SMD
+Change Component Description : Designator=M2_A Old Description=Test Point 1.65X0.9X1.2mm SMD New Description=Test-Point 3.3x1.6x2.1mm SMD
+Change Component Description : Designator=M2_B Old Description=Test Point 1.65X0.9X1.2mm SMD New Description=Test-Point 3.3x1.6x2.1mm SMD
+Change Component Description : Designator=M3_A Old Description=Test Point 1.65X0.9X1.2mm SMD New Description=Test-Point 3.3x1.6x2.1mm SMD
+Change Component Description : Designator=M3_B Old Description=Test Point 1.65X0.9X1.2mm SMD New Description=Test-Point 3.3x1.6x2.1mm SMD
+Change Component Kind : Designator=M3_B Old Kind=Standard New Kind=Standard (No BOM)
+Change Component Kind : Designator=M3_A Old Kind=Standard New Kind=Standard (No BOM)
+Change Component Kind : Designator=M2_B Old Kind=Standard New Kind=Standard (No BOM)
+Change Component Kind : Designator=M2_A Old Kind=Standard New Kind=Standard (No BOM)
+Change Component Kind : Designator=M1_B Old Kind=Standard New Kind=Standard (No BOM)
+Change Component Kind : Designator=M1_A Old Kind=Standard New Kind=Standard (No BOM)
+Change component parameters: Designator = "M1_A"; Footprint = "TP_1206"; UniqueID = "\HBWZZQSW"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Harwin Inc"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "S1751-46R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer PN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Storage Location"; Value = "ProtoPlace"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "952-1478-2-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = "1826282"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "PC Test Point"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "TP"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verify"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "M1_B"; Footprint = "TP_1206"; UniqueID = "\ULXFXAOV"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Harwin Inc"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "S1751-46R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer PN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Storage Location"; Value = "ProtoPlace"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "952-1478-2-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = "1826282"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "PC Test Point"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "TP"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verify"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "M2_A"; Footprint = "TP_1206"; UniqueID = "\UWSCCWEH"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Harwin Inc"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "S1751-46R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer PN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Storage Location"; Value = "ProtoPlace"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "952-1478-2-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = "1826282"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "PC Test Point"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "TP"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verify"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "M2_B"; Footprint = "TP_1206"; UniqueID = "\FTZVOKBO"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Harwin Inc"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "S1751-46R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer PN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Storage Location"; Value = "ProtoPlace"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "952-1478-2-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = "1826282"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "PC Test Point"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "TP"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verify"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "M3_A"; Footprint = "TP_1206"; UniqueID = "\RTUUULUL"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Harwin Inc"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "S1751-46R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer PN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Storage Location"; Value = "ProtoPlace"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "952-1478-2-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = "1826282"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "PC Test Point"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "TP"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verify"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "M3_B"; Footprint = "TP_1206"; UniqueID = "\QEGEWMJX"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Harwin Inc"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "S1751-46R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer PN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Storage Location"; Value = "ProtoPlace"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "952-1478-2-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = "1826282"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "PC Test Point"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "TP"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verify"; Value = ""; VariantName = "[No Variations]"
+Added Room: Name=Headers
+Added Room: Name=MCU
+Added Room: Name=Power
+Added Room: Name=TestPoints
+Added Rule: Name=Schematic Clearance Constraint

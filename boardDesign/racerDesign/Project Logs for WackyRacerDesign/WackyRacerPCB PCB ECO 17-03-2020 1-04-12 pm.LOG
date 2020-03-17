@@ -1,0 +1,50 @@
+Removed Pin From Net: NetName=NetH-Bridge_2_8 Pin=U1-5
+Removed Pin From Net: NetName=NetH-Bridge_2_10 Pin=U1-10
+Removed Pin From Net: NetName=NetH-Bridge_2_9 Pin=U1-13
+Removed Pin From Net: NetName=NetH-Bridge_1_9 Pin=U1-15
+Removed Pin From Net: NetName=NetH-Bridge_2_1 Pin=U1-16
+Removed Pin From Net: NetName=NetH-Bridge_1_8 Pin=U1-20
+Removed Pin From Net: NetName=NetH-Bridge_1_15 Pin=U1-23
+Removed Pin From Net: NetName=NetH-Bridge_1_16 Pin=U1-25
+Removed Pin From Net: NetName=NetLED_IN1_1 Pin=U1-33
+Removed Pin From Net: NetName=NetH-Bridge_1_1 Pin=U1-34
+Removed Pin From Net: NetName=Net3V3RF_REG_3 Pin=U1-36
+Removed Pin From Net: NetName=NetCH4_1 Pin=U1-37
+Removed Pin From Net: NetName=NetCH1_1 Pin=U1-38
+Removed Pin From Net: NetName=NetCH3_1 Pin=U1-41
+Removed Pin From Net: NetName=NetCH2_1 Pin=U1-42
+Removed Pin From Net: NetName=MCU_SLEEP Pin=U1-44
+Removed Pin From Net: NetName=STATUS1 Pin=U1-47
+Removed Pin From Net: NetName=STATUS0 Pin=U1-48
+Removed Pin From Net: NetName=GND Pin=Y1-2
+Removed Pin From Net: NetName=GND Pin=Y1-4
+Added Pin To Net: NetName=NetCH3_1 Pin=U1-9
+Added Pin To Net: NetName=NetCH2_1 Pin=U1-10
+Added Pin To Net: NetName=NetCH1_1 Pin=U1-13
+Added Pin To Net: NetName=NetCH4_1 Pin=U1-16
+Added Pin To Net: NetName=STATUS0 Pin=U1-23
+Added Pin To Net: NetName=STATUS1 Pin=U1-25
+Added Pin To Net: NetName=MCU_SLEEP Pin=U1-26
+Added Pin To Net: NetName=Net3V3RF_REG_3 Pin=U1-33
+Added Pin To Net: NetName=NetLED_IN1_1 Pin=U1-34
+Added Pin To Net: NetName=NetH-Bridge_1_8 Pin=U1-35
+Added Pin To Net: NetName=NetH-Bridge_1_1 Pin=U1-36
+Added Pin To Net: NetName=NetH-Bridge_2_8 Pin=U1-37
+Added Pin To Net: NetName=NetH-Bridge_2_1 Pin=U1-38
+Added Pin To Net: NetName=NetH-Bridge_2_10 Pin=U1-41
+Added Pin To Net: NetName=NetH-Bridge_2_9 Pin=U1-42
+Added Pin To Net: NetName=NetH-Bridge_1_16 Pin=U1-44
+Added Pin To Net: NetName=NetH-Bridge_1_15 Pin=U1-47
+Added Pin To Net: NetName=NetH-Bridge_1_9 Pin=U1-48
+Added Member To Class: ClassName=Power Member=Component 3V3_REG CAT6219-330TDGT3
+Added Member To Class: ClassName=Power Member=Component C20 1uF
+Added Member To Class: ClassName=Power Member=Component C21 1uF
+Added Member To Class: ClassName=Headers Member=Component CH1 2 Pin Molex KK HDR
+Added Member To Class: ClassName=Headers Member=Component CH2 2 Pin Molex KK HDR
+Added Member To Class: ClassName=Headers Member=Component CH3 2 Pin Molex KK HDR
+Added Member To Class: ClassName=Headers Member=Component CH4 2 Pin Molex KK HDR
+Added Room: Name=Headers
+Added Room: Name=MCU
+Added Room: Name=Power
+Added Room: Name=TestPoints
+Added Rule: Name=Schematic Clearance Constraint

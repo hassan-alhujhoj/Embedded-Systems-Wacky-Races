@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=NetH-Bridge_1_2 Pin=M_1-1
+Removed Pin From Net: NetName=NetH-Bridge_1_4 Pin=M_1-2
+Added Pin To Net: NetName=NetH-Bridge_1_4 Pin=M_1-1
+Added Pin To Net: NetName=NetH-Bridge_1_2 Pin=M_1-2
+Added Member To Class: ClassName=Headers Member=Component M_2 2 Pin Molex KK HDR

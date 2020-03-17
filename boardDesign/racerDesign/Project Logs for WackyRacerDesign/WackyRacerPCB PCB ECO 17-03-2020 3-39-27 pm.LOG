@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=NetH-Bridge_2_10 Pin=U1-41
+Removed Pin From Net: NetName=NetH-Bridge_1_15 Pin=U1-47
+Added Pin To Net: NetName=NetH-Bridge_1_15 Pin=U1-41
+Added Pin To Net: NetName=NetH-Bridge_2_10 Pin=U1-47
+Added Rule: Name=Schematic Clearance Constraint
