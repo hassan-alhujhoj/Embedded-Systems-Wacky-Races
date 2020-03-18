@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=NetCH1_1 Pin=U1-13
+Removed Pin From Net: NetName=NetBumper_2 Pin=U1-14
+Removed Pin From Net: NetName=NetCH4_1 Pin=U1-16
+Removed Pin From Net: NetName=STATUS0 Pin=U1-23
+Removed Pin From Net: NetName=STATUS1 Pin=U1-25
+Added Pin To Net: NetName=NetBumper_2 Pin=U1-5
+Added Pin To Net: NetName=NetCH4_1 Pin=U1-6
+Added Pin To Net: NetName=STATUS0 Pin=U1-15
+Added Pin To Net: NetName=NetCH1_1 Pin=U1-16
+Added Pin To Net: NetName=STATUS1 Pin=U1-23
+Added Member To Class: ClassName=MCU Member=Component R2 27R
+Added Rule: Name=Schematic Clearance Constraint

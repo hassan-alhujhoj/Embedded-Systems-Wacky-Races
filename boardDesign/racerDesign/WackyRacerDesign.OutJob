@@ -2,9 +2,9 @@
 Version=1.0
 
 [PublishSettings]
-OutputFilePath2=P:\Semester1_2020\ENCE461\Term 1\wacky races\GIT\wacky-racers-2020\boardDesign\racerDesign\.PDF
+OutputFilePath2=P:\ence461\wackyraces\git\actualprojcect\wacky-racers-2020\boardDesign\racerDesign\.PDF
 ReleaseManaged2=0
-OutputBasePath2=P:\Semester1_2020\ENCE461\Term 1\wacky races\GIT\wacky-racers-2020\boardDesign\racerDesign\
+OutputBasePath2=P:\ence461\wackyraces\git\actualprojcect\wacky-racers-2020\boardDesign\racerDesign\
 OutputPathMedia2=
 OutputPathMediaValue2=
 OutputPathOutputer2=[Output Type]
@@ -81,7 +81,7 @@ WmvVideoCodecName4=Windows Media Video V7
 WmvQuality4=80
 
 [GeneratedFilesSettings]
-RelativeOutputPath2=P:\Semester1_2020\ENCE461\Term 1\wacky races\GIT\wacky-racers-2020\boardDesign\racerDesign\.PDF
+RelativeOutputPath2=P:\ence461\wackyraces\git\actualprojcect\wacky-racers-2020\boardDesign\racerDesign\.PDF
 OpenOutputs2=1
 RelativeOutputPath3=
 OpenOutputs3=1

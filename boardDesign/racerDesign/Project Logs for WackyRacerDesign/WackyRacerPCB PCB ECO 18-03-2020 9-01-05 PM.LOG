@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=Net3V3RF_REG_3 Pin=U1-33
+Removed Pin From Net: NetName=NetR15_1 Pin=U1-49
+Change Component Designator: OldDesignator=LED_IN NewDesignator=LED_IN1
+Change Component Designator: OldDesignator=LED_OUT NewDesignator=LED_OUT1
+Added Pin To Net: NetName=Net3V3RF_REG_3 Pin=U1-23
+Added Pin To Net: NetName=NetR15_1 Pin=U1-25
+Added Member To Class: ClassName=Power Member=Component C6 22uF
+Added Member To Class: ClassName=TestPoints Member=Component GND1 TP
+Added Member To Class: ClassName=TestPoints Member=Component VBATT_IND =Value
+Added Rule: Name=Schematic Clearance Constraint
