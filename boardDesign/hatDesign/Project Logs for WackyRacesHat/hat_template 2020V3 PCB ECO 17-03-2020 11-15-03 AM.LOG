@@ -1,0 +1,20 @@
+Added Component: Designator=R21(RESC1608L)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Storage Location"; Value = "PCB Assembly WS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "27R"; VariantName = "[No Variations]"
+Added Component: Designator=R22(RESC1608L)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Storage Location"; Value = "PCB Assembly WS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "27R"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=D_N Pin=R21-2
+Added Pin To Net: NetName=D_P Pin=R22-2
+Added Pin To Net: NetName=NetH7_2 Pin=H7-2
+Added Pin To Net: NetName=NetH7_2 Pin=R21-1
+Added Net: Name=NetH7_2
+Added Pin To Net: NetName=NetH7_3 Pin=H7-3
+Added Pin To Net: NetName=NetH7_3 Pin=R22-1
+Added Net: Name=NetH7_3
+Added Member To Class: ClassName=Connections Member=Component R21 27R
+Added Member To Class: ClassName=Connections Member=Component R22 27R

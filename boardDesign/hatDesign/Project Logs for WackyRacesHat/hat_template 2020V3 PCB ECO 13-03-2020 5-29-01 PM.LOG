@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=nRF_SCK Pin=U4-21
+Removed Pin From Net: NetName=nRF_MISO Pin=U4-27
+Added Pin To Net: NetName=nRF_MISO Pin=U4-21
+Added Pin To Net: NetName=nRF_SCK Pin=U4-27

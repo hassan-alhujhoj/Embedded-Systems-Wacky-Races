@@ -1,0 +1,8 @@
+Change Component Footprint: Designator=R14 Old Footprint=RESC3216L New Footprint=RESC1608L
+Change Component Designator: OldDesignator=PZ_DRV NewDesignator=TP12
+Change Component Designator: OldDesignator=RST+ NewDesignator=TP1
+Change Component Designator: OldDesignator=RST- NewDesignator=TP2
+Added Room: Name=Connections
+Added Room: Name=Main Sheet
+Added Room: Name=Power Sheet
+Added Room: Name=Test Points Sheet

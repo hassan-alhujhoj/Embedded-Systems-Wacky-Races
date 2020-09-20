@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=nRF_IRQ Pin=U4-9
+Removed Pin From Net: NetName=nRF_CE Pin=U4-19
+Removed Pin From Net: NetName=nRF_POWER_ENABLE Pin=U4-20
+Removed Pin From Net: NetName=nRF_MISO Pin=U4-21
+Removed Pin From Net: NetName=nRF_MOSI Pin=U4-22
+Removed Pin From Net: NetName=nRF_SCK Pin=U4-27
+Removed Pin From Net: NetName=nRF_CSN Pin=U4-28
+Removed Pin From Net: NetName=LED_STRIP_DATA_IN Pin=U4-29
+Added Pin To Net: NetName=nRF_IRQ Pin=U4-19
+Added Pin To Net: NetName=nRF_MISO Pin=U4-20
+Added Pin To Net: NetName=nRF_MOSI Pin=U4-21
+Added Pin To Net: NetName=nRF_SCK Pin=U4-22
+Added Pin To Net: NetName=nRF_CSN Pin=U4-27
+Added Pin To Net: NetName=nRF_CE Pin=U4-28
+Added Pin To Net: NetName=nRF_POWER_ENABLE Pin=U4-29
+Added Pin To Net: NetName=LED_STRIP_DATA_IN Pin=U4-30

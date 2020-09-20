@@ -1,0 +1,494 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD19\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">18/03/2020</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">9:55:13 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc" class="file"><acronym title="P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc">P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">34</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Waived Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">5</td></tr>
+</table>
+</td>
+</table><a name="IDWB4YHSAWGAXPNEZNVURM0WQODLJUCBJE4ZNCWJDACPSF4B3ZYAMB"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDXEFOHY5D2NMGD3FR2UX2O1FCXHKIOUNAEWDGOXEHRIQJYIHOP5C">Clearance Constraint (Gap=0.15mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID3DGADWJJ5VEWHUVPW1O2OM1RPOKMBU14ICGKHUHZFZWRYYD13UPH">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDK52OFXDTII2PK5VSSBOBCZZHMBTO5IG4RYXPQL2JNUPZV21IFIM">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQDF51Z3CITN1KOWUMDJPMDHE4KJUPSCJZB1HQDZIPLEZY04PN5B">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID0RZ0G4PSWMMYDZOYEDSKW2COEMZCUMRF1MSQPWHESTMRJ0FOACBF">Width Constraint (Min=0.15mm) (Max=2mm) (Preferred=0.3mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID1VHLKBF5EIX1PSXPUS43JKQTMEBSGBKR1TLTFUNGRLJOSVV3DXIG">SMD To Corner (Distance=0.25mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDQNRPWR5CXFDNPNOBXX1DLFK1TG1TDCDI11JH0XKHVJKCKMUKACSG">SMD To Plane Constraint (Distance=5mm) (All)</a></td>
+<td class="column2">34</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDL3HBG2GB5UMACEGHMIUSUQKO4IIFCVJEKIHFLGPG0ZATJ3RTGI1K">SMD Neck-Down Constraint (Percent=50%) (Disabled)(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDBARJJNESHQIFGEG32UHXO1IEWBVDUFH4VNUV5UOPQ25MU2PPNF4M">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAY1RDEMO0COZPDLJADH2EOM50EDIXDWHHL44XLGHXN3WXUH4D30G">Minimum Annular Ring (Minimum=0.1mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDOIMVEWYWMEDDL52VOHUFMSTB2E2YLJUET0HVYQGLNS0SA5LDY2LK">Hole Size Constraint (Min=0.3mm) (Max=10mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDBHUIOALM0JIPO2SXKAKZLXLDXML1COQNJ4RY3KBZ4FONCXJEJ1FN">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJXC0NAPI1I2TCO5OXN00K5TDGLJOKBCQC4DR5XNPYFCIXCQVGSPP">Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDB4NR2E35FUVFIUXP3SEEDI53VHAUPSXRV3NWCWOTICKYW05RXL5">Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID0VNE444IV54SMOLZP4JMJOSBSJXTVKTHMAXF2HHFO1SPOP5DL21K">Silk to Silk (Clearance=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDBJZWD2JRZTOUIBNRIM4QVTBPKBYSEXJADNIWEPGNBF45GP4JSH5">Net Antennae (Tolerance=1mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDQOUXUCF4OT0QFLSQK3BAGGH1SL5UPICIAAZ4R3O315TZ0KO1SD1C">Board Clearance Constraint (Gap=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID230MPNXGYV13JOVW5AB01FABPOFPMAZ2KDUUC1C4CPB4Q4AYZMDE">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">34</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Waived Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDPPJQVELEP0RRFES1XRQIXA2VZCMXGKSZISS0V5LINOQAY2KZL4SN">Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQ5HCJDRVLUF0FGQKAHAYBL0UMB5PP1WCV0PPADGJ3KZRVTEPDOGE">Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">5</td>
+</tr>
+</table><br><a name="IDO2FATUGQX0ZZPUSLTUKNYLPNRPDFAA0G0RX5J4HDVVFVKFRQV4BC"><h2>Rule Violations</h2></a><a name="IDQNRPWR5CXFDNPNOBXX1DLFK1TG1TDCDI11JH0XKHVJKCKMUKACSG"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">SMD To Plane Constraint (Distance=5mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145678.144mil|Location2.X=-99967.562mil|Location1.Y=-9.949mil|Location2.Y=12.086mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145678.144mil|Location2.X=-99967.562mil|Location1.Y=-9.949mil|Location2.Y=12.086mil|Absolute=True">SMD To Plane Constraint: Pad C11-2(16.2mm,37.8mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145674.739mil|Location2.X=-99967.562mil|Location1.Y=-9.949mil|Location2.Y=12.086mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145674.739mil|Location2.X=-99967.562mil|Location1.Y=-9.949mil|Location2.Y=12.086mil|Absolute=True">SMD To Plane Constraint: Pad C17-2(34mm,62.3mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-146256.371mil|Location2.X=-99967.562mil|Location1.Y=-9.949mil|Location2.Y=12.086mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-146256.371mil|Location2.X=-99967.562mil|Location1.Y=-9.949mil|Location2.Y=12.086mil|Absolute=True">SMD To Plane Constraint: Pad C27-2(12.45mm,50.55mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145678.44mil|Location2.X=-99967.562mil|Location1.Y=-9.949mil|Location2.Y=12.086mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145678.44mil|Location2.X=-99967.562mil|Location1.Y=-9.949mil|Location2.Y=12.086mil|Absolute=True">SMD To Plane Constraint: Pad C28-2(17.8mm,50.55mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145675.139mil|Location2.X=-99967.562mil|Location1.Y=-9.949mil|Location2.Y=12.086mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145675.139mil|Location2.X=-99967.562mil|Location1.Y=-9.949mil|Location2.Y=12.086mil|Absolute=True">SMD To Plane Constraint: Pad C9-2(8.85mm,53.8mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145678.28mil|Location2.X=-99967.562mil|Location1.Y=-9.949mil|Location2.Y=12.086mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145678.28mil|Location2.X=-99967.562mil|Location1.Y=-9.949mil|Location2.Y=12.086mil|Absolute=True">SMD To Plane Constraint: Pad DL2-2(61.2mm,30.425mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145678.168mil|Location2.X=-99967.562mil|Location1.Y=-9.949mil|Location2.Y=12.086mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145678.168mil|Location2.X=-99967.562mil|Location1.Y=-9.949mil|Location2.Y=12.086mil|Absolute=True">SMD To Plane Constraint: Pad H2-1(18.6mm,80.5mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-146255.867mil|Location2.X=-99967.562mil|Location1.Y=-9.949mil|Location2.Y=12.086mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-146255.867mil|Location2.X=-99967.562mil|Location1.Y=-9.949mil|Location2.Y=12.086mil|Absolute=True">SMD To Plane Constraint: Pad H4-1(24.7mm,80.5mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145678.224mil|Location2.X=-99967.562mil|Location1.Y=-9.949mil|Location2.Y=12.086mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145678.224mil|Location2.X=-99967.562mil|Location1.Y=-9.949mil|Location2.Y=12.086mil|Absolute=True">SMD To Plane Constraint: Pad H5-1(30.8mm,80.5mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145673.825mil|Location2.X=-99967.562mil|Location1.Y=-6.405mil|Location2.Y=8.09mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145673.825mil|Location2.X=-99967.562mil|Location1.Y=-6.405mil|Location2.Y=8.09mil|Absolute=True">SMD To Plane Constraint: Pad H7-5(8.15mm,36.25mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-146257.949mil|Location2.X=-99967.562mil|Location1.Y=-12.311mil|Location2.Y=14.736mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-146257.949mil|Location2.X=-99967.562mil|Location1.Y=-12.311mil|Location2.Y=14.736mil|Absolute=True">SMD To Plane Constraint: Pad L3-1(4.45mm,60.45mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145674.889mil|Location2.X=-99967.562mil|Location1.Y=-6.405mil|Location2.Y=8.09mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145674.889mil|Location2.X=-99967.562mil|Location1.Y=-6.405mil|Location2.Y=8.09mil|Absolute=True">SMD To Plane Constraint: Pad Q1-2(41.8mm,14.55mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145676.091mil|Location2.X=-99967.562mil|Location1.Y=-8.768mil|Location2.Y=10.741mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145676.091mil|Location2.X=-99967.562mil|Location1.Y=-8.768mil|Location2.Y=10.741mil|Absolute=True">SMD To Plane Constraint: Pad R11-1(48.75mm,31.95mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145673.91mil|Location2.X=-99967.562mil|Location1.Y=-8.768mil|Location2.Y=10.741mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145673.91mil|Location2.X=-99967.562mil|Location1.Y=-8.768mil|Location2.Y=10.741mil|Absolute=True">SMD To Plane Constraint: Pad R5-2(6.65mm,60.45mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145675.91mil|Location2.X=-99967.562mil|Location1.Y=-7.586mil|Location2.Y=9.405mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145675.91mil|Location2.X=-99967.562mil|Location1.Y=-7.586mil|Location2.Y=9.405mil|Absolute=True">SMD To Plane Constraint: Pad T1-2(2.4mm,18.5mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145689.12mil|Location2.X=-99967.562mil|Location1.Y=-24.122mil|Location2.Y=24.448mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145689.12mil|Location2.X=-99967.562mil|Location1.Y=-24.122mil|Location2.Y=24.448mil|Absolute=True">SMD To Plane Constraint: Pad TP16-1(2.6mm,29.7mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145691.485mil|Location2.X=-99967.562mil|Location1.Y=-24.122mil|Location2.Y=24.448mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145691.485mil|Location2.X=-99967.562mil|Location1.Y=-24.122mil|Location2.Y=24.448mil|Absolute=True">SMD To Plane Constraint: Pad TP19-1(2mm,57.25mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-146248.605mil|Location2.X=-99967.562mil|Location1.Y=-2.862mil|Location2.Y=4.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-146248.605mil|Location2.X=-99967.562mil|Location1.Y=-2.862mil|Location2.Y=4.985mil|Absolute=True">SMD To Plane Constraint: Pad U2-1(41.693mm,28.235mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145671.049mil|Location2.X=-99967.562mil|Location1.Y=-2.862mil|Location2.Y=4.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145671.049mil|Location2.X=-99967.562mil|Location1.Y=-2.862mil|Location2.Y=4.985mil|Absolute=True">SMD To Plane Constraint: Pad U2-13(43.693mm,32.635mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145670.305mil|Location2.X=-99967.562mil|Location1.Y=-2.862mil|Location2.Y=4.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145670.305mil|Location2.X=-99967.562mil|Location1.Y=-2.862mil|Location2.Y=4.985mil|Absolute=True">SMD To Plane Constraint: Pad U2-22(40.543mm,30.235mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145674.662mil|Location2.X=-99967.562mil|Location1.Y=-7.586mil|Location2.Y=9.405mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145674.662mil|Location2.X=-99967.562mil|Location1.Y=-7.586mil|Location2.Y=9.405mil|Absolute=True">SMD To Plane Constraint: Pad U3-2(17.65mm,36.85mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145675.334mil|Location2.X=-99967.562mil|Location1.Y=-7.586mil|Location2.Y=9.405mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145675.334mil|Location2.X=-99967.562mil|Location1.Y=-7.586mil|Location2.Y=9.405mil|Absolute=True">SMD To Plane Constraint: Pad U3-3(17.65mm,35.9mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145668.307mil|Location2.X=-99967.562mil|Location1.Y=-3.453mil|Location2.Y=5.402mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145668.307mil|Location2.X=-99967.562mil|Location1.Y=-3.453mil|Location2.Y=5.402mil|Absolute=True">SMD To Plane Constraint: Pad U4-1(33.45mm,60.625mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-146249.843mil|Location2.X=-99967.562mil|Location1.Y=-3.453mil|Location2.Y=5.402mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-146249.843mil|Location2.X=-99967.562mil|Location1.Y=-3.453mil|Location2.Y=5.402mil|Absolute=True">SMD To Plane Constraint: Pad U4-17(24.175mm,58.85mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145671.824mil|Location2.X=-99967.562mil|Location1.Y=-3.453mil|Location2.Y=5.402mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145671.824mil|Location2.X=-99967.562mil|Location1.Y=-3.453mil|Location2.Y=5.402mil|Absolute=True">SMD To Plane Constraint: Pad U4-18(24.175mm,58.35mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145667.883mil|Location2.X=-99967.562mil|Location1.Y=-3.453mil|Location2.Y=5.402mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145667.883mil|Location2.X=-99967.562mil|Location1.Y=-3.453mil|Location2.Y=5.402mil|Absolute=True">SMD To Plane Constraint: Pad U4-2(32.95mm,60.625mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145670.48mil|Location2.X=-99967.562mil|Location1.Y=-3.453mil|Location2.Y=5.402mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145670.48mil|Location2.X=-99967.562mil|Location1.Y=-3.453mil|Location2.Y=5.402mil|Absolute=True">SMD To Plane Constraint: Pad U4-24(24.175mm,55.35mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145670.784mil|Location2.X=-99967.562mil|Location1.Y=-3.453mil|Location2.Y=5.402mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145670.784mil|Location2.X=-99967.562mil|Location1.Y=-3.453mil|Location2.Y=5.402mil|Absolute=True">SMD To Plane Constraint: Pad U4-45(31.95mm,49.575mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145670.44mil|Location2.X=-99967.562mil|Location1.Y=-3.453mil|Location2.Y=5.402mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145670.44mil|Location2.X=-99967.562mil|Location1.Y=-3.453mil|Location2.Y=5.402mil|Absolute=True">SMD To Plane Constraint: Pad U4-46(32.45mm,49.575mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-146249.195mil|Location2.X=-99967.562mil|Location1.Y=-3.453mil|Location2.Y=5.402mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-146249.195mil|Location2.X=-99967.562mil|Location1.Y=-3.453mil|Location2.Y=5.402mil|Absolute=True">SMD To Plane Constraint: Pad U4-7(30.45mm,60.625mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=99999mil|Location2.X=191041.425mil|Location1.Y=-3.453mil|Location2.Y=5.402mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=99999mil|Location2.X=191041.425mil|Location1.Y=-3.453mil|Location2.Y=5.402mil|Absolute=True">SMD To Plane Constraint: Pad U4-8(29.95mm,60.625mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145676.004mil|Location2.X=-99967.562mil|Location1.Y=-8.177mil|Location2.Y=10.083mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145676.004mil|Location2.X=-99967.562mil|Location1.Y=-8.177mil|Location2.Y=10.083mil|Absolute=True">SMD To Plane Constraint: Pad U7-2(14mm,49.15mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145671.872mil|Location2.X=-99967.562mil|Location1.Y=-8.177mil|Location2.Y=10.083mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-145671.872mil|Location2.X=-99967.562mil|Location1.Y=-8.177mil|Location2.Y=10.083mil|Absolute=True">SMD To Plane Constraint: Pad U7-5(16.4mm,49.15mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-146263.818mil|Location2.X=-99967.562mil|Location1.Y=-17.035mil|Location2.Y=19.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-146263.818mil|Location2.X=-99967.562mil|Location1.Y=-17.035mil|Location2.Y=19.437mil|Absolute=True">SMD To Plane Constraint: Pad Y1-4(37.2mm,55.5mm) on Top Side Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDTQIZEEP3TQ0QH0GI4NJV2PZ2XNIS3QVPN3IY24K2GOIW5DV0H1IG"><h2>Waived Violations</h2></a><a name="IDPPJQVELEP0RRFES1XRQIXA2VZCMXGKSZISS0V5LINOQAY2KZL4SN"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2097.737mil|Location2.X=2102.924mil|Location1.Y=3722.8mil|Location2.Y=3727.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2097.737mil|Location2.X=2102.924mil|Location1.Y=3722.8mil|Location2.Y=3727.987mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.1mm) Between Pad U7-1(14mm,50.1mm) on Top Side And Pad U7-2(14mm,49.15mm) on Top Side [Top Solder] Mask Sliver [0.097mm]</acronym></a><br>Waived by  at 18/03/2020 6:47:58 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2097.737mil|Location2.X=2102.924mil|Location1.Y=3685.399mil|Location2.Y=3690.586mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2097.737mil|Location2.X=2102.924mil|Location1.Y=3685.399mil|Location2.Y=3690.586mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.1mm) Between Pad U7-2(14mm,49.15mm) on Top Side And Pad U7-3(14mm,48.2mm) on Top Side [Top Solder] Mask Sliver [0.097mm]</acronym></a><br>Waived by  at 18/03/2020 6:47:49 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2192.225mil|Location2.X=2197.412mil|Location1.Y=3685.399mil|Location2.Y=3690.586mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2192.225mil|Location2.X=2197.412mil|Location1.Y=3685.399mil|Location2.Y=3690.586mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.1mm) Between Pad U7-4(16.4mm,48.2mm) on Top Side And Pad U7-5(16.4mm,49.15mm) on Top Side [Top Solder] Mask Sliver [0.097mm]</acronym></a><br>Waived by  at 18/03/2020 6:47:54 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2192.225mil|Location2.X=2197.412mil|Location1.Y=3722.8mil|Location2.Y=3727.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2192.225mil|Location2.X=2197.412mil|Location1.Y=3722.8mil|Location2.Y=3727.987mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.1mm) Between Pad U7-5(16.4mm,49.15mm) on Top Side And Pad U7-6(16.4mm,50.1mm) on Top Side [Top Solder] Mask Sliver [0.097mm]</acronym></a><br>Waived by  at 18/03/2020 6:47:44 PM</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDQ5HCJDRVLUF0FGQKAHAYBL0UMB5PP1WCV0PPADGJ3KZRVTEPDOGE"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3202.875mil|Location2.X=3214.125mil|Location1.Y=2871.745mil|Location2.Y=2882.995mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=P:\ENCE461\wackyraces-hat\boardDesign\hatDesign\HatBoard_Group10.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3202.875mil|Location2.X=3214.125mil|Location1.Y=2871.745mil|Location2.Y=2882.995mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.252mm &lt; 0.254mm) Between Arc (41.193mm,28.085mm) on Top Overlay And Pad U2-1(41.693mm,28.235mm) on Top Side [Top Overlay] to [Top Solder] clearance [0.252mm]</acronym></a><br>Waived by  at 18/03/2020 6:54:21 PM</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

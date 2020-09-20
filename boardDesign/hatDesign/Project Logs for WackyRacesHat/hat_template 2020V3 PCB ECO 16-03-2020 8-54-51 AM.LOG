@@ -1,0 +1,14 @@
+Change Component Footprint: Designator=CA2 Old Footprint=NICH-1 New Footprint=CAPC3216L
+Change Component Comment : Designator=CA2 Old Comment=100uF/16V New Comment=22uF
+Change Component Designator: OldDesignator=CA2 NewDesignator=C29
+Change component parameters: Designator = "C29"; Footprint = "CAPC3216L"; UniqueID = "\JJFDAKWB"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Dielectric"; Value = "Y5V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Voltage"; Value = "10V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Storage Location"; Value = "PCB Assembly WS"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "22uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verify"; Value = ""; VariantName = "[No Variations]"
+Change Net Name : Old Net Name=NetCA2_2 New Net Name=NetC29_2
+Added Member To Class: ClassName=Connections Member=Component C29 22uF
+Added Room: Name=Connections

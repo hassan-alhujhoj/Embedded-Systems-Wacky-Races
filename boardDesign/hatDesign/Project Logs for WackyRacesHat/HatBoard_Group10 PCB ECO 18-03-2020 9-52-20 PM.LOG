@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=PIEZO_DRIVE Pin=U4-33
+Removed Pin From Net: NetName=AUX_BUTTON_1 Pin=U4-49
+Change Component Designator: OldDesignator=BTS NewDesignator=TP21
+Added Pin To Net: NetName=PIEZO_DRIVE Pin=U4-34
+Added Pin To Net: NetName=AUX_BUTTON_1 Pin=U4-52

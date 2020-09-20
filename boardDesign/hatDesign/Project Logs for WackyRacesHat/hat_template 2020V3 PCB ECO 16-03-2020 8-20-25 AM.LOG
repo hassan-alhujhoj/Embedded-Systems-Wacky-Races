@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=nRF_MOSI Pin=TP9-1
+Removed Pin From Net: NetName=GND Pin=Y1-2
+Removed Pin From Net: NetName=GND Pin=Y1-4
+Removed Member From Class: ClassName=Test Points Sheet Member=TP9

@@ -1,0 +1,25 @@
+Removed Pin From Net: NetName=5V Pin=C26-1
+Removed Pin From Net: NetName=5V Pin=H7-1
+Removed Pin From Net: NetName=nRF_MISO Pin=U4-20
+Removed Pin From Net: NetName=nRF_MOSI Pin=U4-21
+Removed Pin From Net: NetName=nRF_SCK Pin=U4-22
+Removed Pin From Net: NetName=nRF_CSN Pin=U4-27
+Added Component: Designator=R20(RESC3216L)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Storage Location"; Value = "PCB Assembly WS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0R"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=5V Pin=R20-2
+Added Pin To Net: NetName=nRF_CSN Pin=U4-20
+Added Pin To Net: NetName=nRF_SCK Pin=U4-21
+Added Pin To Net: NetName=nRF_MOSI Pin=U4-22
+Added Pin To Net: NetName=nRF_MISO Pin=U4-27
+Added Pin To Net: NetName=NetC26_1 Pin=C26-1
+Added Pin To Net: NetName=NetC26_1 Pin=H7-1
+Added Pin To Net: NetName=NetC26_1 Pin=R20-1
+Added Net: Name=NetC26_1
+Added Member To Class: ClassName=Connections Member=Component R20 0R
+Added Room: Name=Connections
+Added Room: Name=Main Sheet
+Added Room: Name=Power Sheet
+Added Room: Name=Test Points Sheet

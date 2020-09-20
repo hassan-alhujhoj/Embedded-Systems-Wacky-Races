@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=BAT_NEG Pin=R4-1
+Change Component Footprint: Designator=R14 Old Footprint=RESC3216L New Footprint=RESC1608L
+Added Pin To Net: NetName=GND Pin=R4-1
+Added Room: Name=Connections
+Added Room: Name=Main Sheet
+Added Room: Name=Power Sheet
+Added Room: Name=Test Points Sheet

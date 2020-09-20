@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=D_N Pin=H7-2
+Removed Pin From Net: NetName=D_P Pin=H7-3
+Added Member To Class: ClassName=Test Points Sheet Member=Component TP11 TP

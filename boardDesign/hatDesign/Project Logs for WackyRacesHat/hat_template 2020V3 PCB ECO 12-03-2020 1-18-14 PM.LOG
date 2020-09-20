@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=BAT_NEG Pin=R4-1
+Change Component Footprint: Designator=R14 Old Footprint=RESC3216L New Footprint=RESC1608L
+Change Component Designator: OldDesignator=U2 NewDesignator=U8
+Added Pin To Net: NetName=GND Pin=R4-1
+Added Member To Class: ClassName=Main Sheet Member=Component U2 MPU-9250
+Added Member To Class: ClassName=Power Sheet Member=Component U8 CAT6219-330TDGT3

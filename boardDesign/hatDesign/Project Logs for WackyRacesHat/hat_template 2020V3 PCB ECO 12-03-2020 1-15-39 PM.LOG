@@ -1,0 +1,7 @@
+Removed Member From Class: ClassName=Power Sheet Member=U2
+Change Component Designator: OldDesignator=U2 NewDesignator=U8
+Added Member To Class: ClassName=Power Sheet Member=Component U8 CAT6219-330TDGT3
+Added Room: Name=Connections
+Added Room: Name=Main Sheet
+Added Room: Name=Power Sheet
+Added Room: Name=Test Points Sheet
