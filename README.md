@@ -1,4 +1,3 @@
-=======
 WackyRacers-2020
 ===============
 <img src="wiki/main1.png" alt="doc_1" width="1200"/>
