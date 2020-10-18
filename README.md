@@ -6,5 +6,5 @@ WackyRacers-2020
 ## Contributors
 * [Hassan Alhujhoj](https://github.com/hassan-alhujhoj)
 * [Marcus Hughan](https://github.com/marcusHughan)
-* [Nathan James]()
-* [Abdullah Naeem]()
+* [Nathan James](https://github.com/natedawgsnz)
+* [Abdullah Naeem](https://github.com/Abdullah-Naeem)
