@@ -7,4 +7,4 @@ WackyRacers-2020
 * [Hassan Alhujhoj](https://github.com/hassan-alhujhoj)
 * [Marcus Hughan](https://github.com/marcusHughan)
 * [Nathan James](https://github.com/natedawgsnz)
-* [Abdullah Naeem](https://github.com/Abdullah-Naeem)
+* [Abdullah Naeem](https://eng-git.canterbury.ac.nz/ana104)
