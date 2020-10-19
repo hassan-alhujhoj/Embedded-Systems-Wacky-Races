@@ -37,6 +37,11 @@ Requirements
 * Must be decorated with an LED tape controlled by the MCU
 * Must regulate the nominal battery voltage to 5V with ADP2302ARDZ-50
 
+Project Output
+==============
+<img src="wiki/wackyHat.png" alt="hat" width="1200"/>
+<img src="wiki/wackyRacer.png" alt="racer" width="1200"/>
+
 Contributors
 ============
 * [Hassan Alhujhoj](https://github.com/hassan-alhujhoj)
