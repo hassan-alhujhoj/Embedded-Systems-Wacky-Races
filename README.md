@@ -1,7 +1,6 @@
 Wacky Races Project
 ===================
-<img src="wiki/main1.png" alt="doc_1" width="1200"/>
-<img src="wiki/main2.png" alt="doc_1" width="1200"/>
+<img src="wiki/main1.png" alt="doc_1" width="500"/><img src="wiki/main2.png" alt="doc_1" width="500"/>. 
 
 Description
 ===========
@@ -23,7 +22,8 @@ Requirements
 * Must include a low-battery-LED indicator
 * Must be decorated with an LED tape controlled by the MCU
 * Must regulate the nominal battery voltage to 5V with ADP2302ARDZ-50
-
+* Drive the motors using H-briges (DRV8833)
+* Use USB and JTAG interfaces for debugging
 
 ## Wacky Hat
 * Must design a 4-layer PCB of dimension 85mmX64mm
@@ -36,6 +36,9 @@ Requirements
 * Must include a low-battery-LED indicator
 * Must be decorated with an LED tape controlled by the MCU
 * Must regulate the nominal battery voltage to 5V with ADP2302ARDZ-50
+* Use I2C IMU (MPU-9250) for head motion detection
+* Use USB and JTAG interfaces for debugging
+
 
 Project Output
 ==============
