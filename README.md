@@ -1,6 +1,6 @@
 Wacky Races Project
 ===================
-<img src="wiki/Wacky_Races.png" alt="Original_Series" width="1200"/>. 
+<img src="wiki/Wacky_Races.png" alt="Original_Series" width="1200"/>
 [source](http://www.ps1fun.com/wacky-races)
 
 Description
@@ -9,6 +9,17 @@ This project was inspired by the infamous cartoon series Wacky Races which invol
 
 The purpose of this assignment was to design, build, and program an embedded system using Atmel SAM4S8 microcontroller and surface mount techmology. The goal of this assignment was to build the Wacky Racer (the vehicle controller) and Wacky Hat (the driver board) in Altium Designer, to populate the board using surface mount technologies (SMT), and to
 program the two boards in C to communicate with each other via nRF24 radio module.
+
+This project was split into two groups: one group is reponsible for the the hat while the other work on the racer. Each group needed to design their board and work concurrently when collaboration is needed.
+
+Project Outcome
+===============
+Participate in a Wacky Race and battle agains other groups' Wacky Racers to eleminate them from the race.
+
+Project Diagram
+===============
+<img src="wiki/wackyHat.png" alt="hat" width="1200"/>
+<img src="wiki/wackyRacer.png" alt="racer" width="1200"/>
 
 Requirements
 ============
@@ -40,14 +51,9 @@ Requirements
 * Use I2C IMU (MPU-9250) for head motion detection
 * Use USB and JTAG interfaces for debugging
 
-Project Output
-==============
-<img src="wiki/wackyHat.png" alt="hat" width="1200"/>
-<img src="wiki/wackyRacer.png" alt="racer" width="1200"/>
-
 PCB Design
 ==========
-<img src="wiki/main1.png" alt="doc_1" width="400"/><img src="wiki/main2.png" alt="doc_1" width="400"/>. 
+<img src="wiki/main1.png" alt="doc_1" width="400"/><img src="wiki/main2.png" alt="doc_1" width="400"/>  
 
 Contributors
 ============
