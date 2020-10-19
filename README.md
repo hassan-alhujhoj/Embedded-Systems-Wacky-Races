@@ -12,10 +12,10 @@ program the two boards in C to communicate with each other via nRF24 radio modul
 
 Contributors
 ============
-* `[Hassan Alhujhoj](https://github.com/hassan-alhujhoj)`
-* `[Marcus Hughan](https://github.com/marcusHughan)`
-* `[Nathan James](https://github.com/natedawgsnz)`
-* `[Abdullah Naeem](https://eng-git.canterbury.ac.nz/ana104)`
+* [Hassan Alhujhoj](https://github.com/hassan-alhujhoj)
+* [Marcus Hughan](https://github.com/marcusHughan)
+* [Nathan James](https://github.com/natedawgsnz)
+* [Abdullah Naeem](https://eng-git.canterbury.ac.nz/ana104)
 
 License
 =======
