@@ -1,7 +1,6 @@
 Wacky Races Project
 ===================
 <img src="wiki/Wacky_Races.png" alt="Original_Series" width="1200"/>. 
-<img src="wiki/main1.png" alt="doc_1" width="400" align="left"/><img src="wiki/main2.png" alt="doc_1" width="400" align="right"/>. 
 
 Description
 ===========
@@ -40,11 +39,14 @@ Requirements
 * Use I2C IMU (MPU-9250) for head motion detection
 * Use USB and JTAG interfaces for debugging
 
-
 Project Output
 ==============
 <img src="wiki/wackyHat.png" alt="hat" width="1200"/>
 <img src="wiki/wackyRacer.png" alt="racer" width="1200"/>
+
+PCB Design
+==========
+<img src="wiki/main1.png" alt="doc_1" width="400"/><img src="wiki/main2.png" alt="doc_1" width="400"/>. 
 
 Contributors
 ============
