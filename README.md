@@ -1,6 +1,6 @@
 Wacky Races Project
 ===================
-<img src="wiki/main1.png" alt="doc_1" width="450"/><img src="wiki/main2.png" alt="doc_1" width="450"/>. 
+<img src="wiki/main1.png" alt="doc_1" width="400"/><img src="wiki/main2.png" alt="doc_1" width="400"/>. 
 
 Description
 ===========
