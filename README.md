@@ -54,7 +54,7 @@ Requirements
 PCB Design
 ==========
 <img src="wiki/main1.png" alt="doc_1" width="400"/><img src="wiki/main2.png" alt="doc_1" width="400"/>  
-<img src="wiki/20201026_060742.jpg" alt="doc_1" width="400"/><img src="wiki/20201026_060742.jpg" alt="doc_1" width="400"/>  
+<img src="wiki/20201026_060742.jpg" alt="doc_1" width="400"/><img src="wiki/20201026_060809.jpg" alt="doc_1" width="400"/>  
 
 Contributors
 ============
