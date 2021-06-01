@@ -7,7 +7,7 @@ Description
 ===========
 This project was inspired by the infamous cartoon series Wacky Races which involve designing unique vehicles for each charecters that match their personalities. This project aimed to bring the series into an embedded systems reality.
 
-The purpose of this assignment was to design, build, and program an embedded system using Atmel SAM4S8 microcontroller and surface mount techmology. The goal of this assignment was to build the Wacky Racer (the vehicle controller) and Wacky Hat (the driver board) in Altium Designer, to populate the board using surface mount technologies (SMT), and to
+The purpose of this assignment was to design, build, and program an embedded system using Atmel SAM4S8 microcontroller and surface mount technology. The goal of this assignment was to build the Wacky Racer (the vehicle controller) and Wacky Hat (the driver board) in Altium Designer, to populate the board using surface mount technologies (SMT), and to
 program the two boards in C to communicate with each other via nRF24 radio module.
 
 This project was split into two groups: one group is reponsible for the the hat while the other work on the racer. Each group needed to design their board and work concurrently when collaboration is needed.
