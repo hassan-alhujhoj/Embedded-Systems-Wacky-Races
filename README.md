@@ -14,7 +14,7 @@ This project was split into two groups: one group is responsible for the hat whi
 
 Project Outcome
 ===============
-Participate in a Wacky Race and battle against other groups to eleminate them from the race.
+Participate in a Wacky Race and battle against other groups to eliminate them from the race.
 
 Project Diagram
 ===============
